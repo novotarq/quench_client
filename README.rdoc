@@ -2,6 +2,11 @@
 
 Simple client for Panthera Quench Api, More info: http://publishers.quenchnetworks.com/docs.
 
+== Usage
+
+QuenchClient.load_options({ :application_id => 'your Quench application id here', :application_key => 'your Quench application key here'})
+QuenchClient.search('nikon')
+
 == Contributing to quench_client
  
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
