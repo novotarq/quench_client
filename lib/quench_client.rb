@@ -67,9 +67,8 @@ module QuenchClient
       self.query('get', '/product/' + id.to_s, {}, nil)
     end
     
-    def get_products_with_stores
-      options = {:showstores => '1'}
-      self.query('get', '/product/', options, nil)
+    def get_products_with_stores(id)
+      self.query('get', '/product/' + id.to_s, {:showstores => '1'}, nil)
     end
     
     def get_category_products(id)
